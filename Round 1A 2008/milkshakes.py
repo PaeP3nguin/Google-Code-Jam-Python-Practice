@@ -1,13 +1,9 @@
-# import itertools
-import pdb
-
 class Customer:
     def __init__(self, pref_count, prefs):
         self.pref_count = pref_count
         self.prefs = prefs
 
     def isSatisfied(self, batches):
-        # pdb.set_trace()
         for b in range(0, len(batches)):
             for pref in self.prefs:
                 if b + 1 == pref[0] and batches[b] == pref[1]:
