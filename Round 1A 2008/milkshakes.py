@@ -15,8 +15,8 @@ class Customer:
         return False
 
 def main():
-    with open("B-small-practice.in") as in_file:
-        with open("milkshakes-out-small.txt", "w") as fout:
+    with open("B-large-practice.in") as in_file:
+        with open("milkshakes-out-large.txt", "w") as fout:
             num_cases = int(in_file.readline())
             print(num_cases)
             for x in range(1, num_cases + 1):
